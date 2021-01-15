@@ -1,0 +1,12 @@
+@import "../components/alert";
+@import "../components/botao";
+@import "../components/carregamento";
+
+.main {
+    &__lista-botao{
+        padding-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
