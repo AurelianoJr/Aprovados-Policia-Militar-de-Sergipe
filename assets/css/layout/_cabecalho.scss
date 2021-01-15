@@ -1,0 +1,21 @@
+.cabecalho{
+    align-items: center;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+
+    &__icone-subir{
+        background: url(../img/top-arrow.svg) no-repeat center / 1.2rem;
+        display: inline-block;
+        height: 2.5rem;
+        text-indent: -9999px;
+        width: 3rem;
+    }
+}
