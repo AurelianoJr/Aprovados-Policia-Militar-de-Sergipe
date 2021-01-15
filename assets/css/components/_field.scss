@@ -1,0 +1,56 @@
+.field {
+    $this: &;
+
+    display: block;
+    height: 3rem;
+    position: relative;
+    width: 100%;
+
+    &__input {
+        font-family: var(--fonte-secundaria);
+        font-size: var(--tamanho-padrao);
+        height: 100%;
+        padding-top: 1rem;
+        text-indent: 1rem;
+        transition: height 200ms ease-in, text-indent 500ms ease-in-out, padding-top 500ms ease-in-out;
+        width: 100%;
+
+        &--error{
+            border: 2px solid red;
+        }
+
+        &:focus,
+        &:not(:placeholder-shown) {
+            height: 120%;
+        }
+
+        &:not(:focus):not(:placeholder-shown) {
+            height: 100%;
+            padding: 0;
+            text-indent: 50%;
+        }
+
+        &:focus + #{$this}__label,
+        &:not(:placeholder-shown) + #{$this}__label {
+            font-size: 0.9rem;
+            top: 30%;
+        }
+
+        &:not(:focus):not(:placeholder-shown) + #{$this}__label {
+            font-size: 1rem;
+            top: 50%;
+        }
+    }
+
+    &__label {
+        color: var(--preto);
+        font-family: var(--fonte-principal);
+        font-weight: var(--peso-light);
+        font-size: var(--tamanho-padrao);
+        left: 1rem;
+        position: absolute;
+        transform: translateY(-50%);
+        transition: top 800ms ease-in-out, font-size 500ms ease-in-out;
+        top: 50%;
+    }
+}
