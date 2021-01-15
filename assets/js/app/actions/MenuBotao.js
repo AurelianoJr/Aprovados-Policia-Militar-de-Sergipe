@@ -10,19 +10,19 @@ export class MenuBotao {
         this._init(this._botaoMenuLabel);
     }
 
-    fechar(bloquear) {
+    fechar() {
+        this._acoes();
         this._botaoMenuInput.checked = false;
-        this._acoes(bloquear);
     }
 
     _init(botao) {
         botao.addEventListener("keypress", (event) => event.keyCode == 13 ? botao.click() : false);
-        botao.addEventListener("click", () => this._acoes(true));
+        botao.addEventListener("click", () => this._acoes());
     }
 
-    _acoes(bloquear) {
+    _acoes() {
         this._mudarAriaHidden(this._menu);
-        this._controlaScroll(bloquear);
+        this._controlaScroll();
     }
 
     _mudarAriaHidden(elemento) {
@@ -34,9 +34,9 @@ export class MenuBotao {
         }
     }
 
-    _controlaScroll(bloquear) {
-        if (bloquear && (window.innerWidth < this._maiorTamanhoMobile)) {
-            this._botaoMenuInput.checked ? this._desbloquearScroll() : this._bloquearScroll();
+    _controlaScroll() {
+        if (window.innerWidth < this._maiorTamanhoMobile) {
+            this._botaoMenuInput.checked ? this._desbloquearScroll() : this._bloquearScroll() ;
         }
     }
 

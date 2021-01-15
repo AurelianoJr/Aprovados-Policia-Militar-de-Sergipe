@@ -14,11 +14,8 @@ export class SimulaConvocacao {
     requisitarSimulacao() {
         this._$("botao-simulacao").addEventListener("click", () => {
             if (!this._getConvocacoes()) return;
-            
-            new MenuBotao().fechar(false);
-
+            new MenuBotao().fechar();
             if (!this._listaImportada()) return;
-
             this._aprovadoController.simular(this._convocacaoTurma2, this._convocacaoTurma3, this._getExibicaoTurma1());
         });
     }
