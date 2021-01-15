@@ -1,0 +1,19 @@
+.exibicao {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    &__container {
+        align-items: center;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    &__group:first-of-type {
+        margin-right: 1rem;
+    }
+
+    &__label,
+    &__input {
+        cursor: pointer;
+    }
+}
