@@ -1,0 +1,14 @@
+.cabecalho-tabela {
+    text-align: left;
+    font-family: var(--fonte-secundaria);
+
+    &__dado {
+        background-color: var(--azul);
+        color: var(--branco);
+        padding: 1rem;
+
+        &--pontuacao{
+            text-align: center;
+        }
+    }
+}
