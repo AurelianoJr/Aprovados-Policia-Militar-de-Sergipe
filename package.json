@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "aprovados-pmse-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sistema responsavel por realizar simulação de convocações no concurso da Policia Militar do Estato de Sergipe",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
