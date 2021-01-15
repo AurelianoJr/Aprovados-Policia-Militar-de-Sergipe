@@ -1,0 +1,31 @@
+:root {
+    // color
+    --azul-escuro: #1b212c;
+    --azul: #3c4657;
+    --azul-claro: #475b7e;
+    --branco: #fff;
+    --branco-escuro:#f1f1f1;
+    --cinza: #444;
+    --cinza-transparente: #fafafab3;
+    --preto: #000;
+    --vermelho: #f64b29;
+    --vermelho-transparente: #f64b2940;
+    --verde: #066300;
+
+    // font-family
+    --fonte-principal: "Nunito Sans", sans-serif;
+    --fonte-secundaria: "Roboto", sans-serif;
+
+    // font-size
+    --tamanho-label-alert: 1.5rem;
+    --tamanho-titulo: 1.2rem;
+    --tamanho-padrao: 1rem;
+    --tamanho-botao-menu: 0.6rem;
+    --tamanho-field-label: .9rem;
+    --tamanho-botao-simular: 1.2rem;
+
+    // font-weight
+    --peso-light: 300;
+    --peso-medium: 500;
+    --peso-bold: 700;
+}

@@ -1,0 +1,20 @@
+@import "reset";
+@import "variaveis";
+
+*{
+    box-sizing: border-box;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+.titulo{
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-bold);
+    
+    &--principal{
+        color: var(--branco);
+        font-size: var(--tamanho-titulo);
+    }
+}
