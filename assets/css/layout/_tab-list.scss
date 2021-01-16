@@ -1,0 +1,8 @@
+.tab-list{
+    width: 90%;
+    display: flex;
+
+    @media($mobile-width-small){
+        width: 100%;
+    }
+}

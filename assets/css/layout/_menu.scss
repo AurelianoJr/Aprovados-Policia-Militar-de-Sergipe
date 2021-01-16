@@ -1,4 +1,5 @@
 @import "../components/menu-icone";
+@import "tab-list";
 @import "../components/tab";
 @import "../components/pane";
 @import "../components/range";
@@ -16,6 +17,30 @@
     width: 100%;
     overflow: scroll;
     height: 1px; //!Verificar se funciona no mobile
+
+    @media($mobile-width-medium){
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media($mobile-width-large){
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    @media($desktop){
+        overflow-y: initial;
+        overflow-x: hidden;
+        left: 0;
+        opacity: 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media($desktop-large){
+        padding-left: 2rem;
+        padding-right: 2rem;  
+    }
 
     &__botao {
         background-color: var(--vermelho);

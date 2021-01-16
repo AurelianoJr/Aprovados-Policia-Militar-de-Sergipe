@@ -3,10 +3,28 @@
 @import "../components/carregamento";
 
 .main {
+
+    @media($desktop){
+        position: absolute;
+        left: 45%;
+        width: 55%;
+    }
+
+    @media ($desktop-large) {
+        left: 30%;
+        width: 70%;
+    }
+
     &__lista-botao{
         padding-top: 10vh;
         display: flex;
         justify-content: space-around;
         width: 100%;
+
+        @media($desktop){
+            padding-top: 0;
+            justify-content: center;
+            gap: 2rem;
+        }
     }
 }

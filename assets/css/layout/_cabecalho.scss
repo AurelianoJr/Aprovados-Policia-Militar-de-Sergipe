@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalho {
     align-items: center;
     background-color: var(--azul-escuro);
     color: var(--branco);
@@ -9,13 +9,31 @@
     top: 0;
     left: 0;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 
-    &__icone-subir{
+    @media ($desktop) {
+        width: 45%;
+        height: 100vh;
+    }
+
+    @media ($desktop-large) {
+        width: 30%;
+        height: 100vh;
+    }
+
+    &__icone-subir {
         background: url(../img/top-arrow.svg) no-repeat center / 1.2rem;
         display: inline-block;
         height: 2.5rem;
         text-indent: -9999px;
         width: 3rem;
+    }
+
+    &__icone-subir,
+    &__titulo,
+    .menu-icone__label {
+        @media (min-width: 900px) {
+            display: none;
+        }
     }
 }
