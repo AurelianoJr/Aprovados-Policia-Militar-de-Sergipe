@@ -1,8 +1,2 @@
 node_modules
-
-assets/css/base/base.css.map
-assets/css/base/base.css
-assets/css/index.css.map
-assets/css/index.css
-
 test/*
