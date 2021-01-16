@@ -1,13 +1,1 @@
-export class Aprovado {
-    constructor(id, inscricao, nome, posicaoAmpla, posicaoAfro, pontuacao, sexo, convocado, convocadolistaAfro) {
-        this.id = id;
-        this.inscricao = inscricao;
-        this.nome = nome;
-        this.posicaoAmpla = posicaoAmpla;
-        this.posicaoAfro = posicaoAfro;
-        this.pontuacao = pontuacao;
-        this.sexo = sexo;
-        this.convocado = convocado;
-        this.convocadolistaAfro = convocadolistaAfro;
-    }
-}
+export class Aprovado{constructor(o,s,i,t,c,a,h,r,n){this.id=o,this.inscricao=s,this.nome=i,this.posicaoAmpla=t,this.posicaoAfro=c,this.pontuacao=a,this.sexo=h,this.convocado=r,this.convocadolistaAfro=n}}

@@ -1,7 +1,1 @@
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('animation'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: './assets/json/alert.json'
-});
+var animation=bodymovin.loadAnimation({container:document.getElementById("animation"),renderer:"svg",loop:!0,autoplay:!0,path:"./assets/json/alert.json"});
