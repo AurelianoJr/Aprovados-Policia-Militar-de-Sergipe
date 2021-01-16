@@ -1,19 +1,37 @@
 @import "reset";
 @import "variaveis";
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.html{
+html {
+    @media(min-width: 500px) {
+        font-size: 16px;
+    }
+
+    @media(min-width: 1000px){
+        font-size: 18px;
+    }
+
+    @media (min-width: 1500px) and (min-height: 1000px){
+        font-size: 25px;
+    }
+}
+
+body {
+    min-width: 320px;
+}
+
+.html {
     scroll-behavior: smooth;
 }
 
-.titulo{
+.titulo {
     font-family: var(--fonte-principal);
     font-weight: var(--peso-bold);
-    
-    &--principal{
+
+    &--principal {
         color: var(--branco);
         font-size: var(--tamanho-titulo);
     }
