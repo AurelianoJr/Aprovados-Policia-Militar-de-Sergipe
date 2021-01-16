@@ -9,8 +9,12 @@
         font-weight: var(--peso-medium);
         margin-bottom: 1rem;
 
-        &--espacamento-maior{
+        &--espacamento-maior {
             margin-top: 2rem;
+        }
+
+        @media ($mobile-height-medium) {
+            padding-top: 1rem;
         }
     }
 

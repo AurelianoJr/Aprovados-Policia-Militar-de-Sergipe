@@ -11,6 +11,7 @@
     padding: 4rem 0 0 1rem;
     text-align: left;
     width: 45%;
+    max-width: 400px;
 
     &--man {
         background-image: url("../../assets/img/police-officer-man.svg");
@@ -25,9 +26,17 @@
         color: #fff;
     }
 
+    @media($mobile-width-medium){
+        font-size: 1rem;
+    }
+
+    @media($tablet-width-medium){
+        font-size: 1.2rem;
+    }
+
     &__subtitulo {
         display: block;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         font-weight: initial;
         margin-top: 0.5rem;
     }
