@@ -14,13 +14,13 @@
     <body>
         <header class="cabecalho" id="cabecalho">
             <a class="cabecalho__icone-subir" id="botao-subir" href="#lista-botao">Ir para cima</a>
-            <h1 class="titulo titulo--principal">Lista de aprovados</h1>
+            <h1 class="cabecalho__titulo titulo titulo--principal">Lista de aprovados</h1>
             <div class="menu-icone">
                 <input class="menu-icone__input" id="botao-menu-input" type="checkbox" />
                 <label class="menu-icone__label" id="botao-menu-label" for="botao-menu-input" role="button" tabindex="0">MENU</label>
                 <nav class="menu" id="menu" role="menubar" aria-hidden="true">
                     <div class="tabs">
-                        <div id="lista-tab" role="tablist" aria-label="Turmas">
+                        <div class="tab-list" id="lista-tab" role="tablist" aria-label="Turmas">
                             <button class="tab__label tab__label--active" role="tab" aria-selected="true" aria-controls="tab-segunda-turma" id="segunda-turma">
                                 Segunda Turma
                             </button>
@@ -130,23 +130,23 @@
             </section>
             <section class="lista-aprovados" id="lista-aprovados"></section>
 
-            <div class="alert" id="alert">
-                <div
-                    class="alert__container"
-                    id="alert-container"
-                    role="alertdialog"
-                    aria-modal="true"
-                    aria-labelledby="dialog-label alert-descricao"
-                    aria-describedby="alert-descricao"
-                    tabindex="0"
-                >
-                    <div class="alert__animation" id="animation"></div>
-                    <h2 class="alert__label" id="dialog-label">Alerta.</h2>
-                    <p class="alert__descricao" id="alert-descricao">A</p>
-                    <button class="alert__botao" type="button" data-fecha-modal>Voltar</button>
-                </div>
-            </div>
         </main>
+        <div class="alert" id="alert">
+            <div
+                class="alert__container"
+                id="alert-container"
+                role="alertdialog"
+                aria-modal="true"
+                aria-labelledby="dialog-label alert-descricao"
+                aria-describedby="alert-descricao"
+                tabindex="0"
+            >
+                <div class="alert__animation" id="animation"></div>
+                <h2 class="alert__label" id="dialog-label">Alerta.</h2>
+                <p class="alert__descricao" id="alert-descricao">A</p>
+                <button class="alert__botao" type="button" data-fecha-modal>Voltar</button>
+            </div>
+        </div>
 
         <script type="module" src="assets/js/init.js"></script>
         <script src="./assets/json/lottie.min.js"></script>
